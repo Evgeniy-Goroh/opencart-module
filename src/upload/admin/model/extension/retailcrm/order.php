@@ -300,7 +300,7 @@ class ModelExtensionRetailcrmOrder extends Model {
         if ($this->settings[$this->moduleTitle . '_apiversion'] == 'v5') {
             if ($payment_code) {
                 $payment = array(
-                    'externalId' => $order_data['order_id'],
+                    'externalId' => "opencart" . $order_data['order_id'],
                     'type' => $payment_code
                 );
 

@@ -312,7 +312,7 @@ class ModelExtensionRetailcrmOrder extends Model {
         }
 
         $payment = array(
-            'externalId' => $order_id,
+            'externalId' => "opencart" . $order_id,
             'type' => $payment_code,
             'amount' => $totals['total']
         );
